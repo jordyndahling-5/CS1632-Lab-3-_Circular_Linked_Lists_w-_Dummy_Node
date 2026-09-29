@@ -37,7 +37,33 @@ public class CircularLinkedList<T> {
         System.out.print(current.data + " ");
     }
 
+    public void find(T d) {
+        LLNode<T> current = first.next;
+        while (current != first) {
+            if (current.data == d) {
+                System.out.println("value found!");
+                break;
+            } else {
+                current = current.next;
+            }
+        }
+        if (current == first) {
+            System.out.println("value not in list");
+        }
+    }
 
+    public void remove(T d) {
+        LLNode<T> previous = first;
+        LLNode<T> current = first.next;
+        while (current != first) {
+            if (current.data == d) {
+                previous.next = current.next;
+                return;
+            }
+            previous = current;
+            current = current.next;
+        }
+    }
 
     // addItem, showList, showReverseList, find, remove
 }
