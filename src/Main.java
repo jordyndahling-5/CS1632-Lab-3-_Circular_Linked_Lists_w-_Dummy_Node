@@ -4,7 +4,7 @@ public class Main {
         myList.addItem(1);
         myList.addItem(5);
         myList.addItem(3);
-        myList.addItem(9);
+        myList.addItem(8);
 
         myList.showList();
         System.out.println();
