@@ -4,6 +4,9 @@ public class Main {
         myList.addItem(1);
         myList.addItem(5);
 
-        System.out.println(myList); //fix this so it prints values
+        myList.showList();
+        System.out.println();
+
+        myList.showReverseList();
     }
 }
