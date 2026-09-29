@@ -7,7 +7,7 @@ public class Main {
         myList.addItem(8);
 
         myList.showList();
-        System.out.println();
+
 
         myList.showReverseList();
         System.out.println();

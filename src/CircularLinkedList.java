@@ -24,10 +24,12 @@ public class CircularLinkedList<T> {
             System.out.print(current.data + " ");
             current = current.next;
         }
+        System.out.println();
     }
 
     public void showReverseList() {
         showReverse(first.next);
+        System.out.println();
     }
     public void showReverse(LLNode<T> current) {
         if (current == first) {
